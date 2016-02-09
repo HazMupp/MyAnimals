@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="se.peter.myanimals.ListOfAnimalsActivity">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <!-- ovanstående "div" täcker HELA innehållet -->
+
+
+    <!-- kort 1 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/elephant"
+        android:id="@+id/walkingElephant"
+        android:scaleType="centerCrop"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elefant"
+            android:textSize="30dp"
+            android:layout_alignBottom="@id/walkingElephant"
+            android:padding="10dp"
+            android:textColor="@android:color/background_light"
+
+            />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detta är en elefant. Den har en snabel"
+        android:id="@+id/elephant_info"
+        android:layout_below="@id/walkingElephant"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        />
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="info"
+            android:id="@+id/eleShareBtn"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:background="@android:color/white"
+            android:shadowColor="@android:color/transparent"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-medium"
+            android:layout_below="@+id/elephant_info"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:onClick="shareInformation"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:background="@android:color/holo_blue_bright"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-medium"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_below="@+id/elephant_info"
+            android:layout_toRightOf="@+id/eleShareBtn"
+            android:onClick="exploreElephant"
+
+            />
+
+
+
+</RelativeLayout>
+
+    <!-- kort 1 slut -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/cobra"
+            android:id="@+id/angryCobra"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kobra"
+            android:textSize="30dp"
+            android:layout_alignBottom="@id/angryCobra"
+            android:padding="10dp"
+            android:textColor="@android:color/background_light"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detta är en orm"
+            android:id="@+id/cobra_info"
+            android:layout_below="@id/angryCobra"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            />
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="info"
+            android:id="@+id/eleShareBtn2"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:background="@android:color/white"
+            android:shadowColor="@android:color/transparent"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-medium"
+            android:layout_below="@+id/cobra_info"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:background="@android:color/transparent"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-medium"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_below="@+id/cobra_info"
+            android:layout_toRightOf="@+id/eleShareBtn2"
+
+
+            />
+
+
+
+    </RelativeLayout>
+
+    <!--- kort nr 2-->
+
+
+
+        <!-- kort nr 2 slut -->
+
+</LinearLayout>
+
+    </ScrollView>
+
+

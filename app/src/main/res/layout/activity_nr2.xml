@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/elephant"
+            android:id="@+id/animal_portrait"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elefant"
+            android:textSize="30dp"
+            android:layout_alignBottom="@id/animal_portrait"
+            android:padding="10dp"
+            android:textColor="@android:color/background_light"
+            android:id="@+id/animal_headline"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detta är en elefant. Den har en låååång snabel"
+        android:id="@+id/animal_description"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:id="@+id/eleShareBtn2"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:background="@android:color/white"
+            android:shadowColor="@android:color/transparent"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-medium"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:background="@android:color/holo_blue_bright"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-medium"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_toRightOf="@+id/eleShareBtn2" />
+           <!-- android:onClick="shareInformation" -->
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
