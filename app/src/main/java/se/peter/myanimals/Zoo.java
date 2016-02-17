@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Zoo {
 
-     private ArrayList<Animal> zooAnimal;
+    private ArrayList<Animal> zooAnimal;
 
 
     public Zoo() {
@@ -25,35 +25,53 @@ public class Zoo {
 
     }
 
-        public Animal getAnimal(String whichAnimal) {
+    public Animal getAnimal(String whichAnimal) {
         // Hur kan vi hämta ett djur?
-            int index = -1;
+        int index = -1;
 
-            switch (whichAnimal) {
-                case "elephant": index = 0;
-                    break;
-                case "cobra": index = 1;
-                    break;
-                case "fox": index = 2;
-                    break;
-            }
-
-
-            if (index == -1) {
-                return null;
-
-            } else {
-                return zooAnimal.get(index);
-            }
-
-
-            // return zooAnimal.get(index);
+        switch (whichAnimal) {
+            case "elephant":
+                index = 0;
+                break;
+            case "cobra":
+                index = 1;
+                break;
+            case "fox":
+                index = 2;
+                break;
         }
 
 
+        if (index == -1) {
+            return null;
+
+        } else {
+            return zooAnimal.get(index);
+        }
+
+
+        // return zooAnimal.get(index);
+    }
+
+    // Hämta ett vistt djur
+    public Animal getAnimal(int x) {
+        return zooAnimal.get(x);
+    }
+        //Hämta antalet djur i vårt zoo
+
+    public int getNumberOfAnimals() {
+        return zooAnimal.size();
+
+    }
 
 
 }
+
+
+
+
+
+
 
 
 

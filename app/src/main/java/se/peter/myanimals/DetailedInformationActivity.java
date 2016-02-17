@@ -29,8 +29,9 @@ public class DetailedInformationActivity extends AppCompatActivity {
         // Skapa en Zoo (som i sin tur skapar djur)
         Zoo theZoo = new Zoo();
 
-        //Hämta ut ett djur
+        // Hämta ut ett djur
         Animal animal = theZoo.getAnimal(animalToDisplay);
+
 
         if (animal != null) {
             animalHeadline.setText(animal.getName());
